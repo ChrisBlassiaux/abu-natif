@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../kit_ui/images/favicon.png" />
+    <title>About the universe</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="navbar-height"></div>
+    <div class="navbar">
+      <div class="contain-burger">
+        <div class="burger"></div>
+      </div>
+      <nav class="nav">
+        <img src="../assets/images/logotype.png" alt="Logotype" />
+        <a href="#" class="navbar-link">Accueil</a>
+      </nav>
+    </div>
+    <nav class="vertical-navbar">
+      <a href="#" class="nav-vertical-link active">
+        <span class="fas fa-globe fa-3x"></span>
+        <p>Planètes</p>
+      </a>
+      <a href="#" class="nav-vertical-link">
+        <span class="fas fa-rocket fa-3x"></span>
+        <p>Véhicules</p>
+      </a>
+      <a href="#" class="nav-vertical-link">
+        <span class="fab fa-reddit-alien fa-3x"></span>
+        <p>Personnes</p>
+      </a>
+    </nav>
+    <main class="container container-1-2">
+      <div class="card sticky flex tall">
+        <div class="card-header">
+          <h2 class="title text-primary">Planètes</h2>
+          <div class="form-group">
+            <select class="select pr-5">
+              <option value="">Par population</option>
+              <option value="">0 à 100.000</option>
+              <option value="">100.000 à 100.000.000</option>
+              <option value="">+ de 100.000.000</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="form-group form-group-search">
+              <input
+                type="text"
+                class="form-control searchbar"
+                id="searchbar"
+                placeholder="Faites votre recherche"
+              />
+              <label for="searchbar" class="fas fa-search icon"></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="table">
+          <table id="planet-list">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Climat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Les planetes -->
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer">
+          <div class="medium-information mt-5">
+            <span class="info"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="information mb-5">
+            <div>
+              <div class="bold text-primary">
+                Nom de la planète : <span class="namePlanet"></span>
+              </div>
+              <div class="bold text-primary">
+                Gravité : <span class="gravityPlanet"></span>
+              </div>
+              <div class="info mb-3">Infos supplémentaires</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/dom.js"></script>
+    <script src="/assets/js/utils.js"></script>
+    <script src="/assets/js/planets.js"></script>
+  </body>
+</html>
